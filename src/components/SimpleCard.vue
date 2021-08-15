@@ -1,6 +1,6 @@
 <template>
   <div
-    class="shadow w-64 p-10 font-bold text-center"
+    class="shadow w-64 p-8 font-bold text-center"
     :class="{
       'bg-gray-700 text-gray-200': theme === 'dark',
       'bg-gray-200 text-gray-700': theme === 'light',
