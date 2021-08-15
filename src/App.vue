@@ -1,8 +1,11 @@
 <template>
-  <HelloArchVue msg="Welcome to arch-vue!" />
+  <SimpleCard
+    title="Welcome to arch-vue!"
+    theme="dark"
+  />
 </template>
 
 <script setup>
-import HelloArchVue from './components/HelloArchVue.vue';
+import SimpleCard from './components/SimpleCard.vue';
 
 </script>
