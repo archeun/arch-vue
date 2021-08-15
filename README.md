@@ -1,6 +1,8 @@
 # arch-vue
 A library of Vue.js components beautified with Tailwind.css
 
+![Chromatic](https://github.com/archeun/arch-vue/actions/workflows/chromatic.yml/badge.svg)
+
 ## Development
 
 ### Setup
