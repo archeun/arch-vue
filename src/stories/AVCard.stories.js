@@ -1,15 +1,15 @@
-import AVCard from '../components/AVCard.vue';
+import AvCard from '../components/AvCard.vue';
 
 export default {
-  title: 'archeun/AVCard',
-  component: AVCard,
+  title: 'archeun/Card',
+  component: AvCard,
   argTypes: {
     theme: { control: { type: 'select', options: ['light', 'dark'] } },
   },
 };
 
 const Template = (args) => ({
-  components: { AVCard },
+  components: { AvCard },
   setup() {
     return { args };
   },

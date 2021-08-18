@@ -13,7 +13,7 @@
 <script>
 
 export default {
-  name: 'AVCard',
+  name: 'AvCard',
   props: {
     title: { type: String, required: true },
     theme: {
