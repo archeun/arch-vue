@@ -9,6 +9,9 @@ module.exports = {
         archRed: '#d53d3d',
         archGray: '#dedbd8',
       },
+      fontFamily: {
+        base: ['"Roboto Slab"'],
+      },
     },
   },
   variants: {

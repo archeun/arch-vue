@@ -6,7 +6,7 @@
       as="nav"
       class="bg-white border-b-2 border-archRed border-dashed"
     >
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="container mx-auto px-4 md:px-0">
         <div class="flex items-center justify-between h-16">
           <div class="flex items-center">
             <div class="flex-shrink-0">
@@ -59,7 +59,7 @@
     </Disclosure>
 
     <main>
-      <div class="grid grid-cols-2 gap-4">
+      <div class="container mx-auto my-6 p-6 px-4 md:px-6">
         <router-view />
       </div>
     </main>
