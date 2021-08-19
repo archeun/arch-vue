@@ -59,7 +59,7 @@
     </Disclosure>
 
     <main>
-      <div class="container mx-auto my-6 p-6 px-4 md:px-6">
+      <div class="container mx-auto my-6 p-6">
         <router-view />
       </div>
     </main>

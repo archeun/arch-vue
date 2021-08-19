@@ -10,7 +10,7 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes: [
     { path: '/', name: 'home', component: ArchVueHome },
-    { path: '/components', name: 'components', component: ArchVueComponentDocumentation },
+    { path: '/components/:name?', name: 'components', component: ArchVueComponentDocumentation },
     { path: '/blog', name: 'blog', component: ArchVueBlog },
   ],
 });

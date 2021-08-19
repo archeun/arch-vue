@@ -1244,6 +1244,11 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fortawesome/vue-fontawesome@^3.0.0-4":
+  version "3.0.0-4"
+  resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-3.0.0-4.tgz#f90c62160c436e102f82d8bc02ec44de2cf008dc"
+  integrity sha512-dQVhhMRcUPCb0aqk5ohm0KGk5OJ7wFZ9aYapLzJB3Z+xs7LhkRWLTb87reelUAG5PFDjutDAXuloT9hi6cz72A==
+
 "@headlessui/vue@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@headlessui/vue/-/vue-1.4.0.tgz#a4a3f392d6e72923f101e307fcfa6c80c00ea446"

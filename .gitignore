@@ -5,3 +5,4 @@ dist-ssr
 *.local
 build-storybook.log
 storybook-static
+yarn-error.log

@@ -11,6 +11,7 @@
     "chromatic": "npx chromatic --project-token=9a889b23474e"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^3.0.0-4",
     "@headlessui/vue": "^1.4.0",
     "@heroicons/vue": "^1.0.4",
     "vue": "^3.0.5",
