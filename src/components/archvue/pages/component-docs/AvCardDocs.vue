@@ -131,6 +131,7 @@ export default {
     AvCardContent,
   },
   mounted() {
+    // eslint-disable-next-line no-undef
     hljs.highlightAll();
   },
 };
