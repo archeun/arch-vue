@@ -26,16 +26,23 @@
     </template>
   </ArchVueComponentDocSection>
 
-  <ArchVueComponentDocSection title="A card with a title and a content">
+  <ArchVueComponentDocSection
+    title="A card with a title, subtitle, content and a footer provided as props"
+  >
     <template #description>
-      The next and the only other prop it exposes is the,
-      <ArchVueInlineCode>title</ArchVueInlineCode>.
+      The only other set of props the Card expose is the,
+      <ArchVueInlineCode>title</ArchVueInlineCode>,
+      <ArchVueInlineCode>subtitle</ArchVueInlineCode>, and the
+      <ArchVueInlineCode>footer</ArchVueInlineCode>.
     </template>
     <template #visualization>
       <div class="flex justify-center">
         <av-card
           title="This is the title"
-          content="This is the content"
+          subtitle="This is the sub title"
+          content="Lorem ipsum dolor sit amet consectetur adipiscing elit quam lacus augue ut
+          mauris, tincidunt cras rutrum quis ante tempus felis sollicitudin at imperdiet."
+          footer="This is the footer"
           class="w-80"
         />
       </div>
@@ -43,9 +50,58 @@
     <template #code>
       {{`      <av-card
         title="This is the title"
-        content="This is the content"
+        subtitle="This is the sub title"
+        content="Lorem ipsum dolor sit amet consectetur adipiscing elit quam lacus augue ut
+          mauris, tincidunt cras rutrum quis ante tempus felis sollicitudin at imperdiet."
+        footer="This is the footer"
         class="w-80"
       />`}}
+    </template>
+  </ArchVueComponentDocSection>
+
+  <ArchVueComponentDocSection title="Using the directives instead of props">
+    <template #description>
+      It is possible to provide your own html content as the title and the content.
+      In this case, the component does not assume and apply any styles. We have the full
+      control over its styles.
+    </template>
+    <template #visualization>
+      <div class="flex justify-center">
+        <av-card class="w-80">
+          <av-card-title class="px-4 pt-4 text-2xl font-bold">
+            This is the title
+          </av-card-title>
+          <av-card-subtitle class="px-4 pt-2 text-sm text-gray-600">
+            This is the sub title
+          </av-card-subtitle>
+          <av-card-content class="p-4">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit quam lacus augue ut
+            mauris, tincidunt cras rutrum quis ante tempus felis sollicitudin at imperdiet."
+            footer="This is the footer
+          </av-card-content>
+          <av-card-footer class="border-t p-2 px-4 text-gray-600 text-sm font-semibold">
+            This is the footer
+          </av-card-footer>
+        </av-card>
+      </div>
+    </template>
+    <template #code>
+      {{ `      <av-card class="w-80">
+        <av-card-title class="px-4 pt-4 text-2xl font-bold">
+          This is the title
+        </av-card-title>
+        <av-card-subtitle class="px-4 pt-2 text-sm text-gray-600">
+          This is the sub title
+        </av-card-subtitle>
+        <av-card-content class="p-4">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit quam lacus augue ut
+          mauris, tincidunt cras rutrum quis ante tempus felis sollicitudin at imperdiet."
+          footer="This is the footer
+        </av-card-content>
+        <av-card-footer class="border-t p-2 px-4 text-gray-600 text-sm font-semibold">
+          This is the footer
+        </av-card-footer>
+      </av-card>` }}
     </template>
   </ArchVueComponentDocSection>
 
@@ -117,18 +173,22 @@
 
 import AvCard from '../../../card/AvCard.vue';
 import AvCardTitle from '../../../card/AvCardTitle.vue';
+import AvCardContent from '../../../card/AvCardContent.vue';
+import AvCardSubtitle from '../../../card/AvCardSubtitle.vue';
+import AvCardFooter from '../../../card/AvCardFooter.vue';
 import ArchVueInlineCode from '../../utils/common/ArchVueInlineCode.vue';
 import ArchVueComponentDocSection from '../../utils/common/ArchVueComponentDocSection.vue';
-import AvCardContent from '../../../card/AvCardContent.vue';
 
 export default {
   name: 'AvCardDocs',
   components: {
     AvCard,
     AvCardTitle,
+    AvCardContent,
+    AvCardFooter,
+    AvCardSubtitle,
     ArchVueInlineCode,
     ArchVueComponentDocSection,
-    AvCardContent,
   },
   mounted() {
     // eslint-disable-next-line no-undef
